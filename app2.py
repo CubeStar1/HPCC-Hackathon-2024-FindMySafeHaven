@@ -280,13 +280,13 @@ if st.session_state.police_json != "" and st.session_state.police_json != []:
         else:
             st.session_state.df_all_coords.append(df_police_coords)
         st.dataframe(df_police, use_container_width=True, hide_index=True)
-else:
-    st.markdown("""
-                               <div style='background-color: #262730; padding: 20px; border-radius: 5px; text-align: center; font-size: 20px; '>
-                                   NO DATA AVAILABLE FOR POLICE STATION
-                               </div>
-                               """, unsafe_allow_html=True)
-    st.markdown("")
+# else:
+#     st.markdown("""
+#                                <div style='background-color: #262730; padding: 20px; border-radius: 5px; text-align: center; font-size: 20px; '>
+#                                    NO DATA AVAILABLE FOR POLICE STATION
+#                                </div>
+#                                """, unsafe_allow_html=True)
+#     st.markdown("")
 
 
 if st.session_state.fire_json != "" and st.session_state.fire_json != []:
@@ -294,13 +294,13 @@ if st.session_state.fire_json != "" and st.session_state.fire_json != []:
         st.markdown("## Nearest Fire Station")
         df_fire = convert_to_df(st.session_state.fire_json)
         st.dataframe(df_fire, use_container_width=True, hide_index=True)
-else:
-    st.markdown("""
-                                   <div style='background-color: #262730; padding: 20px; border-radius: 5px; text-align: center; font-size: 20px; '>
-                                       NO DATA AVAILABLE FOR FIRE STATION
-                                   </div>
-                                   """, unsafe_allow_html=True)
-    st.markdown("")
+# else:
+#     st.markdown("""
+#                                    <div style='background-color: #262730; padding: 20px; border-radius: 5px; text-align: center; font-size: 20px; '>
+#                                        NO DATA AVAILABLE FOR FIRE STATION
+#                                    </div>
+#                                    """, unsafe_allow_html=True)
+#     st.markdown("")
 
 if st.session_state.hospital_json != "" and st.session_state.hospital_json != []:
     with st.container(border=True):
@@ -325,13 +325,13 @@ if st.session_state.hospital_json != "" and st.session_state.hospital_json != []
         else:
             st.session_state.df_all_coords.append(df_hospital_coords)
         st.dataframe(df_hospital, use_container_width=True, hide_index=True)
-else:
-    st.markdown("""
-                                       <div style='background-color: #262730; padding: 20px; border-radius: 5px; text-align: center; font-size: 20px; '>
-                                           NO DATA AVAILABLE FOR HOSPITAL
-                                       </div>
-                                       """, unsafe_allow_html=True)
-    st.markdown("")
+# else:
+#     st.markdown("""
+#                                        <div style='background-color: #262730; padding: 20px; border-radius: 5px; text-align: center; font-size: 20px; '>
+#                                            NO DATA AVAILABLE FOR HOSPITAL
+#                                        </div>
+#                                        """, unsafe_allow_html=True)
+#     st.markdown("")
 
 if st.session_state.food_json != "" and st.session_state.food_json != []:
     with st.container(border=True):
@@ -347,14 +347,14 @@ if st.session_state.food_json != "" and st.session_state.food_json != []:
             st.session_state.df_all_coords.append(df_food_bank_coords)
         st.dataframe(df_food_bank, use_container_width=True, hide_index=True)
 
-
-else:
-    st.markdown("""
-                                           <div style='background-color: #262730; padding: 20px; border-radius: 5px; text-align: center; font-size: 20px; '>
-                                               NO DATA AVAILABLE FOR FOOD BANK
-                                           </div>
-                                           """, unsafe_allow_html=True)
-    st.markdown("")
+#
+# else:
+#     st.markdown("""
+#                                            <div style='background-color: #262730; padding: 20px; border-radius: 5px; text-align: center; font-size: 20px; '>
+#                                                NO DATA AVAILABLE FOR FOOD BANK
+#                                            </div>
+#                                            """, unsafe_allow_html=True)
+#     st.markdown("")
 if st.session_state.church_json != "" and st.session_state.church_json != []:
     with st.container(border=True):
         st.markdown("## Nearest Church")
@@ -368,13 +368,13 @@ if st.session_state.church_json != "" and st.session_state.church_json != []:
             st.session_state.df_all_coords.append(df_church_coords)
         st.dataframe(df_church, use_container_width=True, hide_index=True)
 
-else:
-    st.markdown("""
-                                               <div style='background-color: #262730; padding: 20px; border-radius: 5px; text-align: center; font-size: 20px; '>
-                                                   NO DATA AVAILABLE FOR CHURCH
-                                               </div>
-                                               """, unsafe_allow_html=True)
-    st.markdown("")
+# else:
+#     st.markdown("""
+#                                                <div style='background-color: #262730; padding: 20px; border-radius: 5px; text-align: center; font-size: 20px; '>
+#                                                    NO DATA AVAILABLE FOR CHURCH
+#                                                </div>
+#                                                """, unsafe_allow_html=True)
+#     st.markdown("")
 
 if st.session_state.df_all_coords != []:
     df_all_coords = pd.concat(st.session_state.df_all_coords, axis=0)
