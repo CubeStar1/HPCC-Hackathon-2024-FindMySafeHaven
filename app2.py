@@ -44,7 +44,7 @@ with st.sidebar:
 
     with st.container(border=True):
         st.markdown("### Choose how to search")
-        search_type = st.radio("Search by", ["City and State", "FIPS Code", "Current Location"])
+        search_type = st.radio("Search by", ["City and State", "FIPS Code"])
 
 
 
