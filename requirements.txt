@@ -7,3 +7,4 @@ requests~=2.31.0
 numpy~=1.26.4
 pydeck~=0.8.1b0
 google-generativeai
+streamlit-geolocation
