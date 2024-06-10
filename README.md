@@ -1,6 +1,7 @@
 # FindMySafeHaven
 
-Many travelers find themselves in unfamiliar cities, sometimes unexpectedly. Without knowing the risks and dangers in those areas, tourists can find themselves in dangerous situations. FindMySafeHaven helps travelers stay informed about the safety of their surroundings by providing critical information on social factors and nearby resources. This tool aims to enhance safety and peace of mind for travelers in unfamiliar places.
+- Many travelers find themselves in unfamiliar cities, sometimes unexpectedly. Without knowing the risks and dangers in those areas, tourists can find themselves in dangerous situations. - FindMySafeHaven helps travelers stay informed about the safety of their surroundings by providing critical information on social factors and nearby resources.
+![FindMySafeHaven](https://github.com/CubeStar1/HPCC-Hackathon-2024-FindMySafeHaven/blob/master/images/FindMySafeHaven.png?raw=true)
 
 ## Challenge Overview
 
