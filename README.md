@@ -61,7 +61,7 @@ This year’s challenge was to analyze different social factors by area, such as
 1. **Run the Streamlit app:**
 
    ```bash
-    streamlit run app2.py
+    streamlit run app.py
 2. **Open the WebUI in your browser:** 
 
    - Open your web browser and navigate to http://localhost:8501 to use the WebUI.
